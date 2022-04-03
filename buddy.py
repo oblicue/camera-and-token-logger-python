@@ -1,5 +1,4 @@
 from cv2 import CAP_PROP_BACKLIGHT
-import numpy as np
 import cv2 as cv
 import requests
 import discord
